@@ -1,0 +1,7 @@
+To run execute below command.
+
+java -XX:+HeapDumpOnOutOfMemoryError -XX:VMThreadStackSize=5m -Xss5m -Xmx1024m -XX:MaxMetaspaceSize=55m -jar high-memory-0.0.1-SNAPSHOT-jar-with-dependencies.jar SOF
+
+
+To view java variable.
+java -XX:+PrintFlagsFinal 
