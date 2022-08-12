@@ -3,6 +3,13 @@ Purpose of this project to crash JVM and find the RCA.
 
 Note : assuming readers already familiar with GC, heap allocation, multithreading etc.
 
+## Use Case
+1) [Out Of Memory : heapspace](doc/OutOfMemory-heapspace.md)
+2) [Out Of Memory : metaspace](doc/OutOfMemory-metaspace.md)
+3) [Stack Overflow](doc/StackOverflow.md)
+4) [File Descriptor Leak](doc/FileDescriptorLeak.md)
+5) [High CPU Usgae](doc/HighCpuUsgae.md)
+
 ## Build Project
 1) Clone or download the project.
 2) In a terminal goto the downloaded directory.
