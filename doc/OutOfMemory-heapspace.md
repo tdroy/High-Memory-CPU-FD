@@ -38,8 +38,8 @@ plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.2.200.v20210429-1609
 3) Goto windows --> Preferences --> Enable _Keep Unreachable Object_
 4) Open the heap dump. This will take few minutes depending on the size of the dump file.
 5) Click on the leak suspect report.
-[Leak Suspect Report](../doc/Oom-Leak-Suspect.jpg)
-[Problem Suspect](../doc/Oom-Problem-Suspect.jpg)
+[Leak Suspect Report](../doc/Oom-Leak-Suspect.JPG)
+[Problem Suspect](../doc/Oom-Problem-Suspect.JPG)
 Here we can clearly see the memory occupied by Linklist objects. And the class name in stack-trace.
 ```
 java.util.LinkedList
