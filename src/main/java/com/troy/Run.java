@@ -33,11 +33,13 @@ public class Run {
 		}
 		
 		if (args[0].equalsIgnoreCase("SOF")) {
+			System.out.println("Generating Stack Overflow...");
 			StackOverFlow sof = new StackOverFlow();
 			sof.methodA();
 		}
 		
 		if (args[0].equalsIgnoreCase("CLL")) {
+			System.out.println("Generating Metaspace leak...");
 			ClassLoaderLeak cll = new ClassLoaderLeak();
 			cll.startClassLoader();
 		}
