@@ -5,7 +5,7 @@ Note : assuming readers already familiar with GC, heap allocation, multithreadin
 
 ## Use Case
 1) [Out Of Memory : heapspace](doc/OutOfMemory-heapspace.md)
-2) [Out Of Memory : metaspace](doc/OutOfMemory-metaspace.md)
+2) [Out Of Memory : metaspace](doc/OutOfMemory-metapace.md)
 3) [Stack Overflow](doc/StackOverflow.md)
 4) [File Descriptor Leak](doc/FileDescriptorLeak.md)
 5) [High CPU Usgae](doc/HighCpuUsage.md)
