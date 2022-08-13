@@ -19,6 +19,21 @@ java -XX:+HeapDumpOnOutOfMemoryError -XX:VMThreadStackSize=5m -Xss5m -Xmx1024m -
 ## Analysis
 The code will make recursive between two method. Which will exhausted the stack size.
 <picture>
-  <img alt="Recursive Call." src="../doc/StackOverFlow.PNG">
+  <img alt="Recursive Call." src="../doc/StackOverFlow.JPG">
 </picture>
  
+```
+Generating Stack Overflow...
+Exception in thread "main" java.lang.StackOverflowError
+        at com.troy.StackOverFlow.methodB(StackOverFlow.java:10)
+        at com.troy.StackOverFlow.methodA(StackOverFlow.java:6)
+        at com.troy.StackOverFlow.methodB(StackOverFlow.java:10)
+        at com.troy.StackOverFlow.methodA(StackOverFlow.java:6)
+        at com.troy.StackOverFlow.methodB(StackOverFlow.java:10)
+        at com.troy.StackOverFlow.methodA(StackOverFlow.java:6)
+        at com.troy.StackOverFlow.methodB(StackOverFlow.java:10)
+        at com.troy.StackOverFlow.methodA(StackOverFlow.java:6)
+        at com.troy.StackOverFlow.methodB(StackOverFlow.java:10)
+        at com.troy.StackOverFlow.methodA(StackOverFlow.java:6)
+```
+As we can see stack is filed with two method calls to each other and never comes out.
