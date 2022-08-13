@@ -37,3 +37,6 @@ Exception in thread "main" java.lang.StackOverflowError
         at com.troy.StackOverFlow.methodA(StackOverFlow.java:6)
 ```
 As we can see stack is filed with two method calls to each other and never comes out.
+
+## Solution
+During try to increase the _-Xss_ size to a limited extend. If a larger stack is required then involve dev team.
