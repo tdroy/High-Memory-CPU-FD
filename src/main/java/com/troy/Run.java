@@ -28,31 +28,47 @@ public class Run {
 		}
 		
 		if (args[0].equalsIgnoreCase("OOM")) {
+			for (int i = 5; i>= 0; i--) {
+				System.out.print("Generating OOM in " + i + "sec... \r");
+				Thread.sleep(1000);
+			}
 			MemoryLeak ml = new MemoryLeak();
 			ml.start();
 		}
 		
 		if (args[0].equalsIgnoreCase("SOF")) {
-			System.out.println("Generating Stack Overflow...");
+			for (int i = 5; i>= 0; i--) {
+				System.out.print("Generating Stack Overflow in " + i + "sec... \r");
+				Thread.sleep(1000);
+			}
 			StackOverFlow sof = new StackOverFlow();
 			sof.methodA();
 		}
 		
 		if (args[0].equalsIgnoreCase("CLL")) {
-			System.out.println("Generating Metaspace leak...");
+			for (int i = 5; i>= 0; i--) {
+				System.out.print("Generating Metaspace leak in " + i + "sec... \r");
+				Thread.sleep(1000);
+			}
 			ClassLoaderLeak cll = new ClassLoaderLeak();
 			cll.startClassLoader();
 		}
 		
 		if (args[0].equalsIgnoreCase("FDL")) {
-			System.out.println("Generating File descriptor leak...");
+			for (int i = 5; i>= 0; i--) {
+				System.out.print("Generating File Descriptor leak in " + i + "Sec... \r");
+				Thread.sleep(1000);
+			}
 			DescriptorLeak dl = new DescriptorLeak();
 			for (int i=0; i < 100; i++)
 				dl.startLoad();
 		}
 		
 		if (args[0].equalsIgnoreCase("CPU")) {
-			System.out.println("Generating High CPU Load...");
+			for (int i = 5; i>= 0; i--) {
+				System.out.print("Generating High CPU in " + i + "sec... \r");
+				Thread.sleep(1000);
+			}
 			HighCpu hc = new HighCpu();
 			hc.startCpuLoad();
 		}
