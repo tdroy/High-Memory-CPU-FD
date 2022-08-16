@@ -14,6 +14,6 @@ java -XX:+HeapDumpOnOutOfMemoryError -XX:VMThreadStackSize=5m -Xss5m -Xmx1024m -
 ```
 
 ## Analysis
-Go to _/proc/<PID>/fd_ and list the directory. Find out which file is loaded maximum number of time.
+Go to _/proc/<<PID>>/fd_ and list the directory. Find out which file is loaded maximum number of time.
 Reach out to dev team for detail RCA.
 
