@@ -8,6 +8,12 @@ On unix based system, descriotrs are listed with _ulimit_ command. By default a 
 Very high number of open descriptor will rapidly increase IO calls, and bring down the system.
   
 ## Generate File Descriptor Leak
+Run the program and generate Descriptor leak with below command. Here using the default ulimit 1024.
+```
+java -XX:+HeapDumpOnOutOfMemoryError -XX:VMThreadStackSize=5m -Xss5m -Xmx1024m -XX:MaxMetaspaceSize=25m -jar high-memory-0.0.1-SNAPSHOT-jar-with-dependencies.jar fdl
+```
 
-
+## Analysis
+Go to _/proc/<PID>/fd_ and list the directory. Find out which file is loaded maximum number of time.
+Reach out to dev team for detail RCA.
 
