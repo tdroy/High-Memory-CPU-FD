@@ -55,3 +55,5 @@ java.util.LinkedList
 com.troy.MemoryLeak.createLeak()V
 MemoryLeak.java:25
 ```
+
+Note : Nice images are given to https://medium.com/platform-engineer/understanding-java-memory-model-1d0863f6d973
